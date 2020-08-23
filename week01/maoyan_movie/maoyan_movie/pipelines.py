@@ -15,4 +15,5 @@ class MaoyanMoviePipeline:
         output = f'{c_name}, {e_name},{movie_types}, {on_date}\n'
         with open('./maoyan_scrapy.csv', 'a+', encoding='utf-8') as article:
             article.write(output)
+        print('csv generated')
         return item
